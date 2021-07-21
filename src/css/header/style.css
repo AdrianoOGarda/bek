@@ -1,0 +1,52 @@
+.carousel-item-div {
+    height: 15vw;
+    color: white;
+    position: relative;
+    background-image: url('../../images/header/LandingUno.jpg');
+    background-size: cover;
+    background-position: 40% 60%;
+    background-repeat: no-repeat;
+}
+
+.carousel-item-div-two {
+    height: 15vw;
+    color: white;
+    position: relative;
+    background-image: url('../../images/header/HeaderDos.jpg');
+    background-size: cover;
+    background-position: 40% 25%;
+    background-repeat: no-repeat;
+}
+
+.carousel-item-div-three {
+    height: 15vw;
+    color: white;
+    position: relative;
+    background-image: url('../../images/header/HeaderTres.jpg');
+    background-size: cover;
+    background-position: 40% 40%;
+    background-repeat: no-repeat;
+}
+
+.carousel-indicators button:nth-child(1) {
+    height: .5vw;
+    width: .5vw;
+    border-radius: 50%;
+}
+
+.carousel-indicators button:nth-child(2) {
+    height: .5vw;
+    width: .5vw;
+    border-radius: 50%;
+}
+
+.carousel-indicators button:nth-child(3) {
+    height: .5vw;
+    width: .5vw;
+    border-radius: 50%;
+}
+
+.down-outlined-style {
+    margin-left: .5vw;
+    font-size: 1vw;
+}

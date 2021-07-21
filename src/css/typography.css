@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "G Black";
+    src: url("../fonts/Gotham-Black.otf");
+}
+
+@font-face {
+    font-family: "G Bold";
+    src: url("../fonts/Gotham-Bold.otf");
+}
+
+@font-face {
+    font-family: "G Book Italic";
+    src: url("../fonts/Gotham-BookItalic.otf");
+}
+
+@font-face {
+    font-family: "G Light";
+    src: url("../fonts/Gotham-Light.otf");
+}
+
+@font-face {
+    font-family: "G Thin";
+    src: url("../fonts/Gotham-Thin.otf");
+}
+
+@font-face {
+    font-family: "G Thin Italic";
+    src: url("../fonts/Gotham-ThinItalic.otf");
+}
+
+@font-face {
+    font-family: "G Ultra Italic";
+    src: url("../fonts/Gotham-UltraItalic.otf");
+}
+
+@font-face {
+    font-family: "G X Light";
+    src: url("../fonts/Gotham-XLight.otf");
+}
+
+@font-face {
+    font-family: "G X Light Italic";
+    src: url("../fonts/Gotham-XLightItalic.otf");
+}
+
+@font-face {
+    font-family: "G Bold Italic";
+    src: url("../fonts/GothamBoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "G Book";
+    src: url("../fonts/GothamBook.ttf");
+}
+
+@font-face {
+    font-family: "G Medium";
+    src: url("../fonts/GothamMedium.ttf");
+}
+
+@font-face {
+    font-family: "G Medium1";
+    src: url("../fonts/GothamMedium_1.ttf");
+}
+
+@font-face {
+    font-family: "G Medium Italic";
+    src: url("../fonts/GothamMediumItalic.ttf");
+}
