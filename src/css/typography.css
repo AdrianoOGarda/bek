@@ -1,69 +1,69 @@
 @font-face {
     font-family: "G Black";
-    src: url("../fonts/Gotham-Black.otf");
+    src: url("../static/fonts/Gotham-Black.otf");
 }
 
 @font-face {
     font-family: "G Bold";
-    src: url("../fonts/Gotham-Bold.otf");
+    src: url("../static/fonts/Gotham-Bold.otf");
 }
 
 @font-face {
     font-family: "G Book Italic";
-    src: url("../fonts/Gotham-BookItalic.otf");
+    src: url("../static/fonts/Gotham-BookIta.otf");
 }
 
 @font-face {
     font-family: "G Light";
-    src: url("../fonts/Gotham-Light.otf");
+    src: url("../static/fonts/Gotham-Light.otf");
 }
 
 @font-face {
     font-family: "G Thin";
-    src: url("../fonts/Gotham-Thin.otf");
+    src: url("../static/fonts/Gotham-Thin.otf");
 }
 
 @font-face {
     font-family: "G Thin Italic";
-    src: url("../fonts/Gotham-ThinItalic.otf");
+    src: url("../static/fonts/Gotham-ThinItalic.otf");
 }
 
 @font-face {
     font-family: "G Ultra Italic";
-    src: url("../fonts/Gotham-UltraItalic.otf");
+    src: url("../static/fonts/Gotham-UltraItalic.otf");
 }
 
 @font-face {
     font-family: "G X Light";
-    src: url("../fonts/Gotham-XLight.otf");
+    src: url("../static/fonts/Gotham-XLight.otf");
 }
 
 @font-face {
     font-family: "G X Light Italic";
-    src: url("../fonts/Gotham-XLightItalic.otf");
+    src: url("../static/fonts/Gotham-XLightItalic.otf");
 }
 
 @font-face {
     font-family: "G Bold Italic";
-    src: url("../fonts/GothamBoldItalic.ttf");
+    src: url("../static/fonts/GothamBoldItalic.ttf");
 }
 
 @font-face {
     font-family: "G Book";
-    src: url("../fonts/GothamBook.ttf");
+    src: url("../static/fonts/Gotham\ Book.otf");
 }
 
 @font-face {
     font-family: "G Medium";
-    src: url("../fonts/GothamMedium.ttf");
+    src: url("../static/fonts/Gotham\ Medium.otf");
 }
 
 @font-face {
     font-family: "G Medium1";
-    src: url("../fonts/GothamMedium_1.ttf");
+    src: url("../static/fonts/GothamMedium_1.ttf");
 }
 
 @font-face {
     font-family: "G Medium Italic";
-    src: url("../fonts/GothamMediumItalic.ttf");
+    src: url("../static/fonts/GothamMediumItalic.ttf");
 }

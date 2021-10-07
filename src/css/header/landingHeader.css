@@ -1,0 +1,278 @@
+.carousel-item-div-landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    background-image: url('../../images/header/LandingUno.jpg');
+    background-size: cover;
+    background-position: 40% 60%;
+    background-repeat: no-repeat;
+}
+
+.carousel-item-div-two-landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    background-image: url('../../images/header/HeaderDos.jpg');
+    background-size: cover;
+    background-position: 40% 25%;
+    background-repeat: no-repeat;
+}
+
+.carousel-item-div-three-landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    background-image: url('../../images/header/HeaderTres.jpg');
+    background-size: cover;
+    background-position: 40% 40%;
+    background-repeat: no-repeat;
+}
+
+.carousel-item-div-two-landing h2,
+.carousel-item-div-landing h2,
+.carousel-item-div-three-landing h2 {
+    font-family: 'G Light';
+    font-size: 3.2vw;
+    margin-bottom: 2vw;
+}
+
+.carousel-item-div-two-landing span,
+.carousel-item-div-landing span,
+.carousel-item-div-three-landing span {
+    font-family: 'G Bold';
+}
+
+.asesor-div {
+    display: flex;
+    align-items: center;
+    background-color: #6C9FB4;
+    font-family: 'G Bold';
+    font-size: 1.5vw;
+    padding: 1vw 2vw 0 2vw;
+    color: white;
+}
+
+.carousel-item-div-two-landing a,
+.carousel-item-div-landing a,
+.carousel-item-div-three-landing a {
+    text-decoration: none;
+}
+
+.asesor-div img {
+    width: 2.5vw;
+    margin-right: 1vw;
+    margin-bottom: .7vw;
+}
+
+.close-outlined-antd-landing {
+    font-size: 1.5vw;
+}
+
+.products-nav-links-landing {
+    padding-left: 35%;
+}
+
+.products-nav-links-landing ul li {
+    font-family: 'G Light';
+    font-size: 1.5vw;
+    line-height: 1.4vw;
+    color: #3D3F4D;
+}
+
+.products-nav-links-landing ul li {
+    font-family: 'G Light';
+    font-size: 1.5vw;
+    line-height: 1.4vw;
+    color: #3D3F4D;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 481px) {
+    .carousel-desktop-version .carousel {
+        position: relative;
+    }
+    .carousel-desktop-version>div:nth-child(1) {
+        position: absolute;
+        transform: rotate(90deg);
+        left: -10px !important;
+        top: 8% !important;
+        width: 70px !important;
+        height: 100px !important;
+        justify-content: space-between !important;
+        margin-left: 0 !important;
+    }
+    .carousel-desktop-version>div:nth-child(1) button {
+        height: 10px !important;
+        width: 10px !important;
+        border-radius: 50%;
+    }
+}
+
+.header-line {
+    height: 20vh;
+    width: 1px;
+    border-left: 2.5px solid white;
+    position: absolute;
+    bottom: 5%;
+    left: 50px;
+}
+
+.social-header-div {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    display: flex;
+    width: 15vw;
+    justify-content: space-between;
+}
+
+.social-header-div img {
+    width: 3vw;
+}
+
+.social-header-div a:nth-child(1) img {
+    width: 1.6vw;
+}
+
+
+/* MOBILE */
+
+.mobile-header-logo-landing {
+    width: 18vw;
+    margin-left: 6vw;
+    margin-top: .3vw;
+}
+
+@media only screen and (max-width: 480px) {
+    .close-outlined-antd-landing {
+        font-size: 5vw;
+    }
+    .products-nav-links-landing {
+        padding-left: 35%;
+    }
+    .products-nav-links-landing ul li {
+        font-family: 'G Light';
+        font-size: 4vw;
+        line-height: 1.4vw;
+        color: #3D3F4D;
+    }
+    .products-nav-links-landing ul li {
+        font-family: 'G Light';
+        font-size: 4vw;
+        line-height: 4vw;
+        color: #3D3F4D;
+        cursor: pointer;
+    }
+    .carousel-mobile-version .carousel {
+        position: relative;
+    }
+    .carousel-mobile-version .carousel-indicators {
+        position: absolute;
+        transform: rotate(90deg);
+        left: -58% !important;
+        top: -70% !important;
+        width: 20vw !important;
+        justify-content: space-between !important;
+    }
+    .carousel-mobile-version>div:nth-child(1) button {
+        height: 5vw !important;
+        width: 5vw !important;
+        border-radius: 50%;
+        background-color: white !important;
+    }
+    .carousel-mobile-version h2 {
+        font-size: 8vw;
+        text-align: center;
+        margin: 0 6vw 0 6vw;
+        margin-bottom: 5vw;
+    }
+}
+
+.mobile-logo {
+    width: 43vw;
+    position: absolute;
+    left: 28.4%;
+    top: 5%;
+}
+
+.asesor-div-mobile {
+    display: flex;
+    align-items: center;
+    background-color: #6C9FB4;
+    font-family: 'G Bold';
+    font-size: 5vw;
+    padding: 2.5vw 6vw 0 6vw;
+    color: white;
+    border-radius: 50px;
+}
+
+.social-mobile-div img {
+    width: 9vw;
+}
+
+.social-mobile-div a:nth-child(1) img {
+    width: 4.8vw;
+}
+
+.social-mobile-div {
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    position: absolute;
+    bottom: 10vw;
+}
+
+.mobile-circles-one,
+.mobile-circles-two,
+.mobile-circles-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 10vw;
+    left: 5vw;
+    height: 15vw;
+}
+
+.mobile-circles-one div,
+.mobile-circles-two div,
+.mobile-circles-three div {
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    background-color: white;
+    opacity: 40%;
+}
+
+.mobile-circles-one div:nth-child(1) {
+    opacity: 100%;
+}
+
+.mobile-circles-two div:nth-child(2) {
+    opacity: 100%;
+}
+
+.mobile-circles-three div:nth-child(3) {
+    opacity: 100%;
+}
+
+.mobile-header-line {
+    position: absolute;
+    left: 5vw;
+    top: 35vw;
+    height: 45vw;
+    width: 1vw;
+    border-left: 3px solid white;
+}

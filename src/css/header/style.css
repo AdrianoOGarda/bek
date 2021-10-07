@@ -1,5 +1,5 @@
 .carousel-item-div {
-    height: 15vw;
+    height: 20vw;
     color: white;
     position: relative;
     background-image: url('../../images/header/LandingUno.jpg');
@@ -9,7 +9,7 @@
 }
 
 .carousel-item-div-two {
-    height: 15vw;
+    height: 20vw;
     color: white;
     position: relative;
     background-image: url('../../images/header/HeaderDos.jpg');
@@ -19,7 +19,7 @@
 }
 
 .carousel-item-div-three {
-    height: 15vw;
+    height: 20vw;
     color: white;
     position: relative;
     background-image: url('../../images/header/HeaderTres.jpg');
@@ -28,25 +28,100 @@
     background-repeat: no-repeat;
 }
 
-.carousel-indicators button:nth-child(1) {
-    height: .5vw;
-    width: .5vw;
+.carousel-indicators {
+    justify-content: space-between !important;
+    width: 8vw;
+    margin-left: 45% !important;
+}
+
+.carousel-indicators button {
+    height: 8px !important;
+    width: 8px !important;
     border-radius: 50%;
 }
 
-.carousel-indicators button:nth-child(2) {
-    height: .5vw;
-    width: .5vw;
-    border-radius: 50%;
+.close-outlined-antd {
+    font-size: 2vw;
+    position: absolute;
+    top: 5vw;
+    right: -1vw;
 }
 
-.carousel-indicators button:nth-child(3) {
-    height: .5vw;
-    width: .5vw;
-    border-radius: 50%;
+.products-nav-links {
+    padding-left: 35%;
 }
 
-.down-outlined-style {
-    margin-left: .5vw;
-    font-size: 1vw;
+.products-nav-links ul li {
+    font-family: 'G Light';
+    font-size: 1.5vw;
+    line-height: 1.4vw;
+    color: #3D3F4D;
+}
+
+.products-nav-links ul li {
+    font-family: 'G Light';
+    font-size: 1.5vw;
+    line-height: 1.4vw;
+    color: #3D3F4D;
+    cursor: pointer;
+}
+
+
+/* MOBILE */
+
+.mobile-header-logo {
+    width: 18vw;
+    margin-left: 6vw;
+    margin-top: .3vw;
+}
+
+@media only screen and (max-width: 480px) {
+    .close-outlined-antd {
+        font-size: 5vw;
+    }
+    .products-nav-links {
+        padding-left: 35%;
+    }
+    .products-nav-links ul li {
+        font-family: 'G Light';
+        font-size: 4vw;
+        line-height: 1.4vw;
+        color: #3D3F4D;
+    }
+    .products-nav-links ul li {
+        font-family: 'G Light';
+        font-size: 4vw;
+        line-height: 4vw;
+        color: #3D3F4D;
+        cursor: pointer;
+    }
+    .carousel-item-div {
+        height: 70vh;
+        color: white;
+        position: relative;
+        background-position: 40% 60%;
+    }
+    .carousel-item-div-two {
+        height: 70vh;
+        color: white;
+        position: relative;
+        background-position: 40% 25%;
+    }
+    .carousel-item-div-three {
+        height: 70vh;
+        color: white;
+        position: relative;
+        background-position: 40% 40%;
+    }
+    .carousel-indicators {
+        justify-content: space-evenly !important;
+        margin-bottom: 8vw !important;
+        width: 50vw;
+        margin-left: 26.5vw !important;
+    }
+    .carousel-indicators button {
+        width: 13px !important;
+        height: 13px !important;
+        margin: -10vw !important;
+    }
 }

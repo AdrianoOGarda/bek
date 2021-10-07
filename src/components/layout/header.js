@@ -1,16 +1,25 @@
 import React, {useState} from "react"
 import styled from "styled-components"
 import Carousel from 'react-bootstrap/Carousel';
-import { DownOutlined } from '@ant-design/icons';
+import { DownOutlined, CloseOutlined } from '@ant-design/icons';
 import "../../css/header/style.css"
 import "../../css/typography.css"
+import useWindowSize from "../../hooks/useWindowSize"
+import Logo from "../../images/mobileHeader/Logo.png"
+import {Link} from "gatsby"
 
-const MobileHeader = styled.header`
+const DesktopHeader = styled.header`
     width: 100vw;
     box-shadow: ${({nav}) => (nav ? "0" : "0 0 5px 0 gray")};
     overflow: hidden;
+    height: 20vw;
+`
+const MobileHeader = styled.header`
+    width: 100vw;
+    overflow: hidden;
     height: 15vw;
 `
+
 const MenuIcon = styled.button`
     display: flex; 
     flex-direction: column;
@@ -35,23 +44,39 @@ const MenuIcon = styled.button`
         transform-origin: 1px;
         position: relative;
     }
+
+    @media only screen and (max-width: 480px) {
+        width: 8vw;
+        height: 8.5vw;
+        top: 5vw;
+        left: 85%;
+
+        div {
+            background: #3A3D4C;
+            width: 7vw;
+            height: .5vw;
+        }
+    }
 `
 
-const MobileMenuLinks = styled.nav`
+const MenuLinks = styled.nav`
     position: absolute;
     z-index: 9;
     top: 0;
     transform: ${({nav}) => (nav ? "translateX(0)" : "translateX(100%)")};
     display: flex;
     width: 30vw;
+    height: 20vw;
     background-color: #E0D5CAFC;
+    padding-left: 7%;
+    padding-top: 2vw;
 
     ul {
         padding: 0 0 0 5%;
-        margin-top: 15%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        position: relative;
     }
 
     li {
@@ -70,17 +95,68 @@ const MobileMenuLinks = styled.nav`
         text-decoration: none;
         color: #3D3F4D;
         font-family: 'G Light';
-        font-size: 2vw;
+        font-size: 2.5vw;
+        line-height: 3vw;
+    }
+
+    li div p {
+        text-decoration: none;
+        color: #3D3F4D;
+        font-family: 'G Light';
+        font-size: 2.5vw;
+    }
+
+    @media only screen and (max-width: 480px) {
+        top: 15vw;
+        width: 70vw;
+        padding-left: 10%;
+        padding-top: 8%;
+        min-height: 70vh;
+
+        li p {
+            font-size: 7.5vw;
+            line-height: 10vw;
+        }
+
+        li div p {
+            font-size: 7.5vw;
+        }
+    }
+`
+
+const UnorderedList = styled.li`
+    position: relative;
+
+    li p:nth-child(4) {
+        cursor: pointer;
+    }
+
+    @media only screen and (max-width: 480px) {
+        nav li {
+            font-size: 5.5vw;
+            margin-bottom: 2vw;
+        }
+    }
+`
+
+const CloseDiv = styled.div`
+    position: absolute;
+    top: -4vw;
+    right: -7vw;
+
+    @media only screen and (max-width: 480px) {
+        right: -30vw;
     }
 `
 
 const Header = () => {
     const [nav, setNav] = useState(false)
     const [productsNav, setProductsNav] = useState(false)
+    const windowSize = useWindowSize();
 
-    return (
+    return (windowSize > 480) ? (
         <>
-        <MobileHeader nav={nav}>
+        <DesktopHeader nav={nav}>
         <Carousel fade controls={false} >
             <Carousel.Item>
                 <div className='carousel-item-div'> 
@@ -110,46 +186,71 @@ const Header = () => {
                 </div>
             </Carousel.Item>
         </Carousel>
-        </MobileHeader>
+        </DesktopHeader>
 
         {nav ? 
-        <MobileMenuLinks nav={nav}>
-            <ul>
+        <MenuLinks nav={nav}>
+            <UnorderedList>
                 <li>
-                    <p>Home</p>
-                    <p>Líneas</p>
-                    <p>Proyectos</p>
-                    <p productsNav={productsNav} onClick={() => setProductsNav(!productsNav)}>Productos<DownOutlined className='down-outlined-style'/></p>
-                        {productsNav ? 
-                            <nav productsNav={productsNav} className="living-nav-links">
-                                <ul>
-                                    <li onClick={() => {
-                                        setNav(!nav);
-                                    }}>Producto</li>
-                                    <li onClick={() => {
-                                        setNav(!nav);
-                                    }}>Producto2</li>
-                                    <li onClick={() => {
-                                        setNav(!nav);
-                                    }}>Producto3</li>
-                                    <li onClick={() => {
-                                        setNav(!nav);
-                                    }}>Credenzas</li>
-                                </ul>
-                            </nav>
-                        : null}
-                    <p>Contacto</p>
+                    <Link to='/'><p>Home</p></Link>
+                    <Link to='/catalogos'><p>Catálogos</p></Link>                    
+                    <Link to='/proyectos'><p>Proyectos</p></Link>                    
+                    <Link to='/contacto'><p>Contacto</p></Link>
+                    <CloseDiv>
+                        <CloseOutlined nav={nav} onClick={() => {setNav(!nav);}} className='close-outlined-antd'/>
+                    </CloseDiv>
                 </li>
-        </ul>
+            </UnorderedList>
+        </MenuLinks>
+    : null}
+        </>
+    ) : (
+        <>
+        <MobileHeader>  
+            <div>
+                <MenuIcon nav={nav} onClick={() => setNav(!nav)}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </MenuIcon>
+                <img src={Logo} alt="BEK-Logo" className='mobile-header-logo'/>
+            </div>
+        </MobileHeader>
 
-    <div style={{width: '20vw'}}>
-        <p nav={nav} onClick={() => {setNav(!nav);}}>x</p>
-    </div>
-    
-</MobileMenuLinks>
-: null}
-    </>
-    )
+        <div nav={nav}>
+        <Carousel fade controls={false} >
+            <Carousel.Item>
+                <div className='carousel-item-div'> 
+                    
+                </div>
+            </Carousel.Item>
+            <Carousel.Item>
+                <div className='carousel-item-div-two'>
+                    
+                </div>
+            </Carousel.Item>
+            <Carousel.Item>
+                <div className='carousel-item-div-three'>
+                    
+                </div>
+            </Carousel.Item>
+        </Carousel>
+        </div>
+
+        {nav ? 
+        <MenuLinks nav={nav}>
+            <UnorderedList>
+                <li>
+                    <Link to='/'><p>Home</p></Link>
+                    <Link to='/catalogos'><p>Catálogos</p></Link>                    
+                    <Link to='/proyectos'><p>Proyectos</p></Link>                    
+                    <Link to='/contacto'><p>Contacto</p></Link>
+                </li>
+            </UnorderedList>
+        </MenuLinks>
+    : null}
+        </>
+)
 }
 
 export default Header

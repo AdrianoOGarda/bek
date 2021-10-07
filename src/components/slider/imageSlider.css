@@ -1,0 +1,44 @@
+.slide-3d {
+    transform: scale(0.7);
+    transition: transform 300ms;
+    opacity: 0.5;
+}
+
+.slideWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.prevArrow {
+    position: absolute;
+    top: 40%;
+    left: 60px;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.nextArrow {
+    position: absolute;
+    top: 40%;
+    right: 60px;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.slider-div-background {
+    width: 30vw;
+    height: 30vw;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 480px) {
+    .slider-div-background {
+        height: 90vw;
+        width: 90vw;
+        background-size: cover;
+        background-position: center;
+    }
+}
