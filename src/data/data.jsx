@@ -1,29 +1,33 @@
 import One from "../images/slider/Uno.jpeg"
+import r from "../images/slider/Dos.jpeg"
+import t from "../images/slider/Tres.jpeg"
+import y from "../images/slider/Cuatro.jpeg"
+import u from "../images/slider/Cinco.jpeg"
 
 export const IMAGES = [
     {
       id: 1,
-      src: "/images/Uno.jpeg",
+      src: One,
       alt: "Placeholder image",
     },
     {
       id: 2,
-      src: "/images/Dos.jpeg",
+      src: r,
       alt: "Placeholder image",
     },
     {
       id: 3,
-      src: "/images/Tres.jpeg",
+      src: t,
       alt: "Placeholder image",
     },
     {
       id: 4,
-      src: "/images/Cuatro.jpeg",
+      src: y,
       alt: "Placeholder image",
     },
     {
       id: 5,
-      src: "/images/Cinco.jpeg",
+      src: u,
       alt: "Placeholder image",
     },
   ];
