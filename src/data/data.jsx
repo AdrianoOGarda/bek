@@ -1,3 +1,5 @@
+import One from "../images/slider/Uno.jpeg"
+
 export const IMAGES = [
     {
       id: 1,
