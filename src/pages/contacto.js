@@ -8,6 +8,7 @@ import Mapa from "../images/contacto/Mapa.jpg"
 import Loc from "../images/contacto/Loc.png"
 import Tel from "../images/contacto/Tel.png"
 import Mail from "../images/contacto/Mail.png"
+import Aperturas from "../images/contacto/Aperturas.png"
 
 const FirstDiv = styled.div`
     display: flex;
@@ -175,6 +176,9 @@ a {
     margin-bottom: 2vw;
     margin-left: 15vw;
 }
+.address-div a {
+    width: 80vw;
+}
 `
 
 const Contacto = () => {
@@ -200,6 +204,7 @@ const Contacto = () => {
         </Helmet> 
         <Layout>
             <Divider text='Contacto'/>
+            <img src={Aperturas} alt="aperturas" style={{width: '100vw'}} />
             <FirstDiv>
                 <div className='green'>
                     <h2>Muebles <span>BEK Edo. de Mex</span></h2>
@@ -251,6 +256,7 @@ const Contacto = () => {
         </Helmet> 
         <Layout>
             <Divider text='Contacto'/>
+            <img src={Aperturas} alt="aperturas" style={{width: '100vw'}} />
             <FirstDivMob>
                 <img src={Mapa} alt="mapa" />
                 <div className='green-mob'>

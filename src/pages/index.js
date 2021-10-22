@@ -20,6 +20,12 @@ import Hotel from "../images/proyectos/Hotel.png"
 import Condominio from "../images/proyectos/Condominio.png"
 import ExteriorPro from "../images/proyectos/Exterior.png"
 import useWindowSize from "../hooks/useWindowSize"
+import BancosPdf from "../pdfs/Bancos.pdf"
+import ColumpiosPdf from "../pdfs/Columpios.pdf"
+import DecoracionPdf from "../pdfs/Decoración.pdf"
+import ExteriorPdf from "../pdfs/Exterior.pdf"
+import SombrillasPdf from "../pdfs/Sombrillas.pdf"
+import Puntos from "../images/general/Puntos.png"
 
 const FirstDiv = styled.div`
   position: relative;
@@ -356,7 +362,7 @@ const FourthDiv = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  padding: 0 5vw 0 5vw;
+  padding: 0 5vw 3vw 5vw;
 
   > div {
     width: 25vw;
@@ -399,6 +405,7 @@ const FourthDiv = styled.div`
   @media only screen and (max-width: 480px) {
     flex-direction: column;
     padding: 0 0 0 0;
+    padding-bottom: 0;
 
   > div {
     width: 100vw;
@@ -422,32 +429,6 @@ const FourthDiv = styled.div`
   }
   }
 `
-const ClientesDiv = styled.div`
-  background-color: #54826F;
-  height: 30vw;
-  display: flex;
-  justify-content: center;
-  padding: 2vw 0 0 0;
-  margin-top: 4vw;
-
-  h3 {
-    font-family: 'G Bold';
-    color: white;
-    font-size: 4vw;
-  }
-
-  @media only screen and (max-width: 480px) {
-    height: 100vw;
-
-    h3 {
-    font-family: 'G Bold';
-    color: white;
-    font-size: 8vw;
-  }
-  }
-  
-`
-
 
 const IndexPage = () => {
   const windowSize = useWindowSize();
@@ -514,7 +495,7 @@ const IndexPage = () => {
                   <h3>Exterior</h3>
                   <p>Descargar</p>
                 </div>
-                <img src={Download} alt="download-icon" />
+                <a href={ExteriorPdf} target="_blank" ><img src={Download} alt="download-icon" /></a>
               </div>
             </div>  
           </div>
@@ -526,7 +507,7 @@ const IndexPage = () => {
                   <h3>Sombrillas</h3>
                   <p>Descargar</p>
                 </div>
-                <img src={Download} alt="download-icon" />
+                <a href={SombrillasPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
               </div>
             </div> 
           </div>
@@ -538,7 +519,7 @@ const IndexPage = () => {
                   <h3>Columpios</h3>
                   <p>Descargar</p>
                 </div>
-                <img src={Download} alt="download-icon" />
+                <a href={ColumpiosPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
               </div>
             </div> 
           </div>
@@ -554,7 +535,7 @@ const IndexPage = () => {
                   <h3>Bancos</h3>
                   <p>Descargar</p>
                 </div>
-                <img src={Download} alt="download-icon" />
+                <a href={BancosPdf} target="_blank" ><img src={Download} alt="download-icon" /></a>
               </div>
             </div>  
           </div>
@@ -566,7 +547,7 @@ const IndexPage = () => {
                   <h3>Decoración</h3>
                   <p>Descargar</p>
                 </div>
-                <img src={Download} alt="download-icon" />
+                <a href={DecoracionPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
               </div>
             </div> 
           </div>
@@ -582,7 +563,7 @@ const IndexPage = () => {
                   <h3>Exterior</h3>
                   <p>Descargar</p>
                 </div>
-                <img src={Download} alt="download-icon" />
+                <a href={ExteriorPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
               </div>
             </div>  
           </div>
@@ -591,10 +572,10 @@ const IndexPage = () => {
             <div className='catal-absolute-div-mob'>
               <div className='catal-inside-div-mob'>
                 <div>
-                  <h3>Exterior</h3>
+                  <h3>Sombrillas</h3>
                   <p>Descargar</p>
                 </div>
-                <img src={Download} alt="download-icon" />
+                <a href={SombrillasPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
               </div>
             </div>  
           </div>
@@ -603,10 +584,10 @@ const IndexPage = () => {
             <div className='catal-absolute-div-mob'>
               <div className='catal-inside-div-mob'>
                 <div>
-                  <h3>Exterior</h3>
+                  <h3>Columpios</h3>
                   <p>Descargar</p>
                 </div>
-                <img src={Download} alt="download-icon" />
+                <a href={ColumpiosPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
               </div>
             </div>  
           </div>
@@ -615,10 +596,10 @@ const IndexPage = () => {
             <div className='catal-absolute-div-mob'>
               <div className='catal-inside-div-mob'>
                 <div>
-                  <h3>Exterior</h3>
+                  <h3>Bancos</h3>
                   <p>Descargar</p>
                 </div>
-                <img src={Download} alt="download-icon" />
+                <a href={BancosPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
               </div>
             </div>  
           </div>
@@ -627,10 +608,10 @@ const IndexPage = () => {
             <div className='catal-absolute-div-mob'>
               <div className='catal-inside-div-mob'>
                 <div>
-                  <h3>Exterior</h3>
+                  <h3>Decoración</h3>
                   <p>Descargar</p>
                 </div>
-                <img src={Download} alt="download-icon" />
+                <a href={DecoracionPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
               </div>
             </div>  
           </div>
@@ -656,16 +637,14 @@ const IndexPage = () => {
             <p>Hotel</p>
           </div>
         </div>
-        <div>
+        <div style={{marginBottom: 0}}>
           <div className='proyectos-inside-div'>
             <h3>Proyecto</h3>
             <p>Condominio</p>
           </div>
         </div>
       </FourthDiv>
-      <ClientesDiv>
-        <h3>Clientes</h3>
-      </ClientesDiv>
+      <img src={Puntos} alt="mapa" style={{width: '100vw'}} />
       </Layout>
     </>
   ) : (
