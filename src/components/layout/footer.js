@@ -223,7 +223,7 @@ const Footer = () => {
         <FirstDiv>
             <p>¿Buscas una cotización?</p>
             <p>Deja tu contacto aquí para que un asesor se ponga en contacto contigo lo antes posible.</p>
-            <form action="">
+            <form action="https://formspree.io/f/xleakapl" method="POST">
                 {windowSize > 480 ? (
                 <div>
                     <div>
@@ -256,24 +256,28 @@ const Footer = () => {
                         <p>Términos y condiciones</p>
                         <p>Cookies</p>
                         <div className='footer-social-div'>
-                            <a href=""><img src={Face} alt="facebook-icon" id='facebook-footer-icon' /></a>
-                            <a href=""><img src={Insta} alt="insta-icon" /></a>
-                            <a href=""><img src={Whats} alt="whats-icon" /></a>
+                            <a href="https://m.facebook.com/BekOutdoorsMx" target="_blank"><img src={Face} alt="facebook-icon" id='facebook-footer-icon' /></a>
+                            <a href="https://instagram.com/bek.outdoors?utm_medium=copy_link" target="_blank"><img src={Insta} alt="insta-icon" /></a>
+                            <a href="https://api.whatsapp.com/send?phone=5215559895595" target="_blank"><img src={Whats} alt="whats-icon" /></a>
                         </div>
                     </div>
                     <div className='text-footer-div'>
-                        <a href="">ventas@bek.mx</a>
+                        <a href="mailto:ventas@bek.mx">ventas@bek.mx</a>
                         <p>bek.mx</p>
-                        <a href="">55 8548 2303</a>
+                        <a href="tel:+525585482303" target="_blank">55 8548 2303</a>
                     </div>
                     <div className='text-footer-div'>
-                        <p>Calle 1 #4,</p>
-                        <p>Col. Alce Blanco, Naucalpan</p>
-                        <p>Edo. de Mex. 53370</p>
+                        <a href="https://goo.gl/maps/YZFtjpfiRNR2Mz8x5" target="_blank">
+                            <p>Calle 1 #4,</p>
+                            <p>Col. Alce Blanco, Naucalpan</p>
+                            <p>Edo. de Mex. 53370</p>
+                        </a>
                         <div className='footer-separator'></div>
-                        <p>Av. Diana 10,</p>
-                        <p>Delicias, 62330</p>
-                        <p>Cuernavaca, Morelos</p>
+                        <a href="https://goo.gl/maps/4Q8YfgTvkjf46Z3z7" target="_blank">
+                            <p>Av. Diana 10,</p>
+                            <p>Delicias, 62330</p>
+                            <p>Cuernavaca, Morelos</p>
+                        </a>
                     </div>
                 </div>
                 </div>
@@ -283,27 +287,31 @@ const Footer = () => {
             <SecondDivMob>
                 <p>Visítanos</p>
                 <div className='text-footer-div-mob'>
+                <a href="https://goo.gl/maps/YZFtjpfiRNR2Mz8x5" target="_blank">
                     <p>Calle 1 #4,</p>
                     <p>Col. Alce Blanco, Naucalpan</p>
                     <p>Edo. de Mex. 53370</p>
+                </a>
                     <div className='footer-separator-mob'></div>
-                    <p>Av. Diana 10,</p>
-                    <p>Delicias, 62330</p>
-                    <p>Cuernavaca, Morelos</p>
+                    <a href="https://goo.gl/maps/4Q8YfgTvkjf46Z3z7" target="_blank">
+                        <p>Av. Diana 10,</p>
+                        <p>Delicias, 62330</p>
+                        <p>Cuernavaca, Morelos</p>
+                    </a>
                 </div>
                 <div className='text-footer-div-mob'>
-                    <a href="">ventas@bek.mx</a>
+                    <a href="mailto:ventas@bek.mx">ventas@bek.mx</a>
                     <p>bek.mx</p>
-                    <a href="">55 8548 2303</a>
+                    <a href="tel:+525585482303" target="_blank">55 8548 2303</a>
                 </div>
                 <div className='text-footer-div-mob'>
                     <p>Avisos de privacidad</p>
                     <p>Términos y condiciones</p>
                     <p>Cookies</p>
                     <div className='footer-social-div-mob'>
-                        <a href=""><img src={Face} alt="facebook-icon" id='facebook-footer-icon-mob' /></a>
-                        <a href=""><img src={Insta} alt="insta-icon" /></a>
-                        <a href=""><img src={Whats} alt="whats-icon" /></a>
+                        <a href="https://m.facebook.com/BekOutdoorsMx" target="_blank"><img src={Face} alt="facebook-icon" id='facebook-footer-icon-mob' /></a>
+                        <a href="https://instagram.com/bek.outdoors?utm_medium=copy_link" target="_blank"><img src={Insta} alt="insta-icon" /></a>
+                        <a href="https://api.whatsapp.com/send?phone=5215559895595" target="_blank"><img src={Whats} alt="whats-icon" /></a>
                     </div>
                 </div>
             </SecondDivMob>
