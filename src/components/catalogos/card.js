@@ -19,7 +19,7 @@ const Card = (props) => {
                      <p style={{fontFamily: 'G Bold', fontSize: '3vw', color: 'white', marginBottom: 0}}>{props.text}</p>
                      <p style={{fontFamily: 'G Book', color: 'white', fontSize: '2vw', marginTop: '-.5vw'}}>Descargar</p>
                  </div>
-                 <a href={props.pdf} target="_blank"><img src={Download} alt="download-icon" style={{width: '4vw'}} /></a>
+                 {/* <a href={props.pdf} target="_blank"><img src={Download} alt="download-icon" style={{width: '4vw'}} /></a> */}
              </div>
              </div>
         ) : (
@@ -33,7 +33,7 @@ const Card = (props) => {
                 <p style={{fontFamily: 'G Bold', fontSize: '7vw', color: 'white', marginBottom: 0}}>{props.text}</p>
                 <p style={{fontFamily: 'G Book', color: 'white', fontSize: '6vw', marginTop: '-.5vw'}}>Descargar</p>
             </div>
-            <a href={props.pdf} target="_blank"><img src={Download} alt="download-icon" style={{width: '11vw'}} /></a>
+            {/* <a href={props.pdf} target="_blank"><img src={Download} alt="download-icon" style={{width: '11vw'}} /></a> */}
         </div>
         </div>        
         )}
