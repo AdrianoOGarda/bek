@@ -495,7 +495,7 @@ const IndexPage = () => {
                   <h3>Exterior</h3>
                   <p>Descargar</p>
                 </div>
-                {/* <a href={ExteriorPdf} target="_blank" ><img src={Download} alt="download-icon" /></a> */}
+                <a href={ExteriorPdf} target="_blank" ><img src={Download} alt="download-icon" /></a>
               </div>
             </div>  
           </div>
@@ -507,7 +507,7 @@ const IndexPage = () => {
                   <h3>Sombrillas</h3>
                   <p>Descargar</p>
                 </div>
-                {/* <a href={SombrillasPdf} target="_blank"><img src={Download} alt="download-icon" /></a> */}
+                <a href={SombrillasPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
               </div>
             </div> 
           </div>
@@ -519,7 +519,7 @@ const IndexPage = () => {
                   <h3>Columpios</h3>
                   <p>Descargar</p>
                 </div>
-                {/* <a href={ColumpiosPdf} target="_blank"><img src={Download} alt="download-icon" /></a> */}
+                <a href={ColumpiosPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
               </div>
             </div> 
           </div>
@@ -535,7 +535,7 @@ const IndexPage = () => {
                   <h3>Bancos</h3>
                   <p>Descargar</p>
                 </div>
-                {/* <a href={BancosPdf} target="_blank" ><img src={Download} alt="download-icon" /></a> */}
+                <a href={BancosPdf} target="_blank" ><img src={Download} alt="download-icon" /></a>
               </div>
             </div>  
           </div>
@@ -547,7 +547,7 @@ const IndexPage = () => {
                   <h3>Decoración</h3>
                   <p>Descargar</p>
                 </div>
-                {/* <a href={DecoracionPdf} target="_blank"><img src={Download} alt="download-icon" /></a> */}
+                <a href={DecoracionPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
               </div>
             </div> 
           </div>
@@ -563,7 +563,7 @@ const IndexPage = () => {
                   <h3>Exterior</h3>
                   <p>Descargar</p>
                 </div>
-                {/* <a href={ExteriorPdf} target="_blank"><img src={Download} alt="download-icon" /></a> */}
+                <a href={ExteriorPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
               </div>
             </div>  
           </div>
@@ -575,7 +575,7 @@ const IndexPage = () => {
                   <h3>Sombrillas</h3>
                   <p>Descargar</p>
                 </div>
-                {/* <a href={SombrillasPdf} target="_blank"><img src={Download} alt="download-icon" /></a> */}
+                <a href={SombrillasPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
               </div>
             </div>  
           </div>
@@ -587,7 +587,7 @@ const IndexPage = () => {
                   <h3>Columpios</h3>
                   <p>Descargar</p>
                 </div>
-                {/* <a href={ColumpiosPdf} target="_blank"><img src={Download} alt="download-icon" /></a> */}
+                <a href={ColumpiosPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
               </div>
             </div>  
           </div>
@@ -599,7 +599,7 @@ const IndexPage = () => {
                   <h3>Bancos</h3>
                   <p>Descargar</p>
                 </div>
-                {/* <a href={BancosPdf} target="_blank"><img src={Download} alt="download-icon" /></a> */}
+                <a href={BancosPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
               </div>
             </div>  
           </div>
@@ -611,7 +611,7 @@ const IndexPage = () => {
                   <h3>Decoración</h3>
                   <p>Descargar</p>
                 </div>
-                {/* <a href={DecoracionPdf} target="_blank"><img src={Download} alt="download-icon" /></a> */}
+                <a href={DecoracionPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
               </div>
             </div>  
           </div>
