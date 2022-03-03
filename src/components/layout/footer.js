@@ -5,6 +5,7 @@ import Contacto from "../../images/footer/Contacto.png"
 import Whats from "../../icons/landing/Whats.svg"
 import Face from "../../icons/landing/Face.svg"
 import Insta from "../../icons/landing/Insta.svg"
+import { Link } from "gatsby"
 
 const FirstDiv = styled.div`
     display: flex;
@@ -252,9 +253,9 @@ const Footer = () => {
                 <p>Visítanos</p>
                 <div className='terms-main-div'>
                     <div className='text-footer-div'>
-                        <p>Avisos de privacidad</p>
+                        <p><Link to="/aviso-de-privacidad">Aviso de privacidad</Link></p>
                         <p>Términos y condiciones</p>
-                        <p>Cookies</p>
+                        <p><Link to="/cookies">Cookies</Link></p>
                         <div className='footer-social-div'>
                             <a href="https://m.facebook.com/BekOutdoorsMx" target="_blank"><img src={Face} alt="facebook-icon" id='facebook-footer-icon' /></a>
                             <a href="https://instagram.com/bek.outdoors?utm_medium=copy_link" target="_blank"><img src={Insta} alt="insta-icon" /></a>
@@ -305,9 +306,9 @@ const Footer = () => {
                     <a href="tel:+525585482303" target="_blank">55 8548 2303</a>
                 </div>
                 <div className='text-footer-div-mob'>
-                    <p>Avisos de privacidad</p>
+                    <p><Link to="/aviso-de-privacidad">Aviso de privacidad</Link></p>
                     <p>Términos y condiciones</p>
-                    <p>Cookies</p>
+                    <p><Link to="/cookies">Cookies</Link></p>
                     <div className='footer-social-div-mob'>
                         <a href="https://m.facebook.com/BekOutdoorsMx" target="_blank"><img src={Face} alt="facebook-icon" id='facebook-footer-icon-mob' /></a>
                         <a href="https://instagram.com/bek.outdoors?utm_medium=copy_link" target="_blank"><img src={Insta} alt="insta-icon" /></a>
