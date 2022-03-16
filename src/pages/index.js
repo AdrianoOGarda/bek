@@ -3,7 +3,11 @@ import styled from "styled-components"
 import {Helmet} from "react-helmet";
 import Layout from "../components/layout/indexLanding"
 import ImageSlider from "../components/slider";
+import ImageSliderTwo from "../components/secondSlider";
+import ImageSliderThree from "../components/thirdSlider";
 import { IMAGES } from "../data/data";
+import { IMAGESTWO } from "../data/secondData";
+import { IMAGESTHREE } from "../data/thirdData";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
 import LandingGif from "../gifs/landing.gif"
@@ -347,13 +351,14 @@ const GalleryDiv = styled.div`
     }
 
     @media only screen and (max-width: 480px) {
-      padding: 7vw 0 0 0;
+      padding: 7vw 3vw 0 3vw;
 
       h2 {
       font-family: 'G Bold';
       margin-bottom: 6vw;
       font-size: 8vw;
       color: #3D3F4D;
+      text-align: center;
     }
     }
 `
@@ -438,6 +443,10 @@ const IndexPage = () => {
         setHasMounted(true)
     }, [])
 
+    useEffect(() => {
+      console.log('im', IMAGESTWO)
+  }, [])
+
   return hasMounted ? (
     <>
       <Layout>
@@ -475,7 +484,8 @@ const IndexPage = () => {
           <p>Los mejores muebles para exteriores, ¡¡ahora más cerca de ti!!</p>
           <p>Adquiere en BEK, salas, comedores, camastros, sillas, bancas y todo lo que necesitas para tu hogar o negocio.</p>
           <h3>¡Te esperamos!</h3>
-          <p>Av. Diana 10, Delicias, 62330, Cuernavaca, Morelos</p>
+          <a href="https://goo.gl/maps/pCnjgXgsCSMeRXyx9" target='_blank' style={{textDecoration: 'none', color: 'white'}}><p>Av. Diana 10, Delicias, 62330, Cuernavaca, Morelos</p></a>
+          <a href="tel:5585482303" target='_blank' style={{textDecoration: 'none', color: 'white'}}><p>55 8548 2303</p></a>
         </div>
         {windowSize > 480 ? (
           <img src={LandingGif} alt="landing-gif" />
@@ -621,8 +631,12 @@ const IndexPage = () => {
         <h2>Galería</h2>
       </GalleryDiv>
       <ImageSlider images={IMAGES} slidesToShow={5} />
+      <GalleryDiv></GalleryDiv>
+      <ImageSliderTwo images={IMAGESTWO} slidesToShow={32} />
+      <GalleryDiv></GalleryDiv>
+      <ImageSliderThree images={IMAGESTHREE} slidesToShow={5} />
       <GalleryDiv>
-        <h2>Nuestros Proyectos</h2>
+        <h2>Algunos de los tipos de proyecto que manejamos</h2>
       </GalleryDiv>
       <FourthDiv>
         <div>
