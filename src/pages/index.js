@@ -29,7 +29,9 @@ import ColumpiosPdf from "../pdfs/Columpios.pdf"
 import DecoracionPdf from "../pdfs/Decoración.pdf"
 import ExteriorPdf from "../pdfs/Exterior.pdf"
 import SombrillasPdf from "../pdfs/Sombrillas.pdf"
+import InteriorPdf from "../pdfs/Interior.pdf"
 import Puntos from "../images/general/Puntos.png"
+import Interior from "../images/nuevasFotos/NuevaDiecisiete.jpg"
 
 const FirstDiv = styled.div`
   position: relative;
@@ -181,6 +183,7 @@ const ThirdDiv = styled.div`
       display: flex;
       justify-content: space-between;
       width: 100vw;
+      margin-bottom: 30px;
     }
     .exterior-div {
       background-image: url(${Exterior});
@@ -198,6 +201,27 @@ const ThirdDiv = styled.div`
     }
     .columpios-div {
       background-image: url(${Columpios});
+      background-size: cover;
+      width: 27vw;
+      height: 30vw;
+      position: relative;
+    }
+    .interior-div {
+      background-image: url(${Interior});
+      background-size: cover;
+      width: 27vw;
+      height: 30vw;
+      position: relative;
+    }
+    .deco-div {
+      background-image: url(${Deco});
+      background-size: cover;
+      width: 27vw;
+      height: 30vw;
+      position: relative;
+    }
+    .bancos-div {
+      background-image: url(${Bancos});
       background-size: cover;
       width: 27vw;
       height: 30vw;
@@ -234,20 +258,6 @@ const ThirdDiv = styled.div`
       display: flex;
       justify-content: space-between;
       width: 100vw;
-    }
-    .deco-div {
-      background-image: url(${Deco});
-      background-size: cover;
-      width: 41.4vw;
-      height: 30vw;
-      position: relative;
-    }
-    .bancos-div {
-      background-image: url(${Bancos});
-      background-size: cover;
-      width: 41.4vw;
-      height: 30vw;
-      position: relative;
     }
     .catal-inside-div-two {
       display: flex;
@@ -304,6 +314,14 @@ const ThirdDivMob = styled.div`
     }
     .deco-div-mob {
       background-image: url(${Deco});
+      background-size: cover;
+      width: 100vw;
+      height: 75vw;
+      position: relative;
+      background-position: center;
+    }
+    .interior-div-mob {
+      background-image: url(${Interior});
       background-size: cover;
       width: 100vw;
       height: 75vw;
@@ -537,10 +555,10 @@ const IndexPage = () => {
         <div>
         </div>
         
-        <div className='second-catal-section '>
+        <div className='first-catal-section'>
         <div className='bancos-div'>
             <div className='catal-absolute-div'>
-              <div className='catal-inside-div-two'>
+              <div className='catal-inside-div'>
                 <div>
                   <h3>Bancos</h3>
                   <p>Descargar</p>
@@ -552,7 +570,7 @@ const IndexPage = () => {
 
           <div className='deco-div'>
             <div className='catal-absolute-div'>
-              <div className='catal-inside-div-two'>
+              <div className='catal-inside-div'>
                 <div>
                   <h3>Decoración</h3>
                   <p>Descargar</p>
@@ -561,12 +579,25 @@ const IndexPage = () => {
               </div>
             </div> 
           </div>
+
+          <div className='interior-div'>
+            <div className='catal-absolute-div'>
+              <div className='catal-inside-div'>
+                <div>
+                  <h3>Interior</h3>
+                  <p>Descargar</p>
+                </div>
+                <a href={InteriorPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
+              </div>
+            </div> 
+          </div>
+
         </div>
       </ThirdDiv>
         ) : (
       <ThirdDivMob>
         <h2>Catálogos</h2>
-        <div className='exterior-div-mob'>
+          <div className='exterior-div-mob'>
             <div className='catal-absolute-div-mob'>
               <div className='catal-inside-div-mob'>
                 <div>
@@ -622,6 +653,18 @@ const IndexPage = () => {
                   <p>Descargar</p>
                 </div>
                 <a href={DecoracionPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
+              </div>
+            </div>  
+          </div>
+
+          <div className='interior-div-mob'>
+            <div className='catal-absolute-div-mob'>
+              <div className='catal-inside-div-mob'>
+                <div>
+                  <h3>Interior</h3>
+                  <p>Descargar</p>
+                </div>
+                <a href={InteriorPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
               </div>
             </div>  
           </div>

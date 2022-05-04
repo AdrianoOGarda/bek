@@ -16,6 +16,8 @@ import ColumpiosPdf from "../pdfs/Columpios.pdf"
 import DecoracionPdf from "../pdfs/Decoración.pdf"
 import ExteriorPdf from "../pdfs/Exterior.pdf"
 import SombrillasPdf from "../pdfs/Sombrillas.pdf"
+import InteriorPdf from "../pdfs/Interior.pdf"
+import Interior from "../images/nuevasFotos/NuevaDiecisiete.jpg"
 
 const CatDiv = styled.div`
     display: flex;
@@ -60,9 +62,10 @@ const Catalogos = () => {
                 <Card image={Columpios} color='#3D3F4D' text='Columpios' pdf={ColumpiosPdf}/>
                 <Card image={Bancos} color='#B76D51' text='Bancos' pdf={BancosPdf}/>
             </CatDiv>
-            <SpecialDiv>
-                <SpecialCard image={Deco} color='#E0D5CA' text='Decoración' pdf={DecoracionPdf}/>
-            </SpecialDiv>
+            <CatDiv>
+                <Card image={Deco} color='#E0D5CA' text='Decoración' pdf={DecoracionPdf}/>
+                <Card image={Interior} color='#54826F' text='Interior' pdf={InteriorPdf}/>
+            </CatDiv>
         </Layout>
         </>
         ) : (
@@ -83,6 +86,7 @@ const Catalogos = () => {
             <Card image={Columpios} color='#3D3F4D' text='Columpios' pdf={ColumpiosPdf}/>
             <Card image={Bancos} color='#B76D51' text='Bancos' pdf={BancosPdf}/>
             <Card image={Deco} color='#E0D5CA' text='Decoración' pdf={DecoracionPdf}/>
+            <Card image={Interior} color='#54826F' text='Interior' pdf={InteriorPdf}/>
         </Layout>
         </>
         )}
