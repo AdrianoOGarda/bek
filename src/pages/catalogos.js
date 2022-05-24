@@ -7,17 +7,15 @@ import Card from "../components/catalogos/card.js"
 import SpecialCard from "../components/catalogos/specialCard.js"
 import Exterior from "../images/catLand/Exterior.png"
 import Bancos from "../images/catLand/Bancos.png"
-import Columpios from "../images/catLand/Columpios.png"
 import Deco from "../images/catLand/Deco.png"
 import Sombrillas from "../images/catLand/Sombrillas.png"
 import useWindowSize from "../hooks/useWindowSize"
 import BancosPdf from "../pdfs/Bancos.pdf"
-import ColumpiosPdf from "../pdfs/Columpios.pdf"
 import DecoracionPdf from "../pdfs/Decoración.pdf"
 import ExteriorPdf from "../pdfs/Exterior.pdf"
 import SombrillasPdf from "../pdfs/Sombrillas.pdf"
 import InteriorPdf from "../pdfs/Interior.pdf"
-import Interior from "../images/nuevasFotos/NuevaDiecisiete.jpg"
+import Interior from "../images/catalogos/Interior.png"
 
 const CatDiv = styled.div`
     display: flex;
@@ -59,12 +57,11 @@ const Catalogos = () => {
                 <Card image={Sombrillas} color='#7D9EB1' text='Sombrillas' pdf={SombrillasPdf}/>
             </CatDiv>
             <CatDiv>
-                <Card image={Columpios} color='#3D3F4D' text='Columpios' pdf={ColumpiosPdf}/>
                 <Card image={Bancos} color='#B76D51' text='Bancos' pdf={BancosPdf}/>
+                <Card image={Deco} color='#E0D5CA' text='Decoración' pdf={DecoracionPdf}/>
             </CatDiv>
             <CatDiv>
-                <Card image={Deco} color='#E0D5CA' text='Decoración' pdf={DecoracionPdf}/>
-                <Card image={Interior} color='#54826F' text='Interior' pdf={InteriorPdf}/>
+                <SpecialCard image={Interior} color='#54826F' text='Interior' pdf={InteriorPdf}/>
             </CatDiv>
         </Layout>
         </>
@@ -83,7 +80,6 @@ const Catalogos = () => {
             <Divider text='Catálogos'/>
             <Card image={Exterior} color='#54826F' text='Exterior' pdf={ExteriorPdf}/>
             <Card image={Sombrillas} color='#7D9EB1' text='Sombrillas' pdf={SombrillasPdf}/>
-            <Card image={Columpios} color='#3D3F4D' text='Columpios' pdf={ColumpiosPdf}/>
             <Card image={Bancos} color='#B76D51' text='Bancos' pdf={BancosPdf}/>
             <Card image={Deco} color='#E0D5CA' text='Decoración' pdf={DecoracionPdf}/>
             <Card image={Interior} color='#54826F' text='Interior' pdf={InteriorPdf}/>

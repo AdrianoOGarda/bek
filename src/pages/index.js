@@ -31,7 +31,7 @@ import ExteriorPdf from "../pdfs/Exterior.pdf"
 import SombrillasPdf from "../pdfs/Sombrillas.pdf"
 import InteriorPdf from "../pdfs/Interior.pdf"
 import Puntos from "../images/general/Puntos.png"
-import Interior from "../images/nuevasFotos/NuevaDiecisiete.jpg"
+import Interior from "../images/catalogos/Interior.png"
 
 const FirstDiv = styled.div`
   position: relative;
@@ -188,9 +188,14 @@ const ThirdDiv = styled.div`
     .exterior-div {
       background-image: url(${Exterior});
       background-size: cover;
-      width: 27vw;
+      width: 56vw;
       height: 30vw;
       position: relative;
+    }
+    .exterior-div .catal-absolute-div img {
+      position: absolute;
+      right: -115%;
+      bottom: 20%;
     }
     .sombrillas-div {
       background-image: url(${Sombrillas});
@@ -540,17 +545,6 @@ const IndexPage = () => {
             </div> 
           </div>
 
-          <div className='columpios-div'>
-            <div className='catal-absolute-div'>
-              <div className='catal-inside-div'>
-                <div>
-                  <h3>Columpios</h3>
-                  <p>Descargar</p>
-                </div>
-                <a href={ColumpiosPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
-              </div>
-            </div> 
-          </div>
         </div>
         <div>
         </div>
@@ -617,18 +611,6 @@ const IndexPage = () => {
                   <p>Descargar</p>
                 </div>
                 <a href={SombrillasPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
-              </div>
-            </div>  
-          </div>
-
-          <div className='columpios-div-mob'>
-            <div className='catal-absolute-div-mob'>
-              <div className='catal-inside-div-mob'>
-                <div>
-                  <h3>Columpios</h3>
-                  <p>Descargar</p>
-                </div>
-                <a href={ColumpiosPdf} target="_blank"><img src={Download} alt="download-icon" /></a>
               </div>
             </div>  
           </div>
