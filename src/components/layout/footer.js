@@ -259,7 +259,7 @@ const Footer = () => {
                         <div className='footer-social-div'>
                             <a href="https://m.facebook.com/BekOutdoorsMx" target="_blank"><img src={Face} alt="facebook-icon" id='facebook-footer-icon' /></a>
                             <a href="https://instagram.com/bek.outdoors?utm_medium=copy_link" target="_blank"><img src={Insta} alt="insta-icon" /></a>
-                            <a href="https://api.whatsapp.com/send?phone=5215559895595" target="_blank"><img src={Whats} alt="whats-icon" /></a>
+                            <a href="https://api.whatsapp.com/send?phone=5215585482303" target="_blank"><img src={Whats} alt="whats-icon" /></a>
                         </div>
                     </div>
                     <div className='text-footer-div'>
@@ -312,7 +312,7 @@ const Footer = () => {
                     <div className='footer-social-div-mob'>
                         <a href="https://m.facebook.com/BekOutdoorsMx" target="_blank"><img src={Face} alt="facebook-icon" id='facebook-footer-icon-mob' /></a>
                         <a href="https://instagram.com/bek.outdoors?utm_medium=copy_link" target="_blank"><img src={Insta} alt="insta-icon" /></a>
-                        <a href="https://api.whatsapp.com/send?phone=5215559895595" target="_blank"><img src={Whats} alt="whats-icon" /></a>
+                        <a href="https://api.whatsapp.com/send?phone=5215585482303" target="_blank"><img src={Whats} alt="whats-icon" /></a>
                     </div>
                 </div>
             </SecondDivMob>
